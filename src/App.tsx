@@ -1,15 +1,15 @@
-import React from "react"
-import Routes from "./routes"
-import { BrowserRouter } from "react-router-dom"
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import AppRoutes from "./routes/AppRoutes";
 
 function App() {
-	return (
-		<React.StrictMode>
-			<BrowserRouter>
-				<Routes />
-			</BrowserRouter>
-		</React.StrictMode>
-	)
+    return (
+        <React.StrictMode>
+            <BrowserRouter>
+                <AppRoutes />
+            </BrowserRouter>
+        </React.StrictMode>
+    );
 }
 
-export default App
+export default App;

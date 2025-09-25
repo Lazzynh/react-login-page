@@ -1,20 +1,10 @@
-// src/index.tsx
-import React from "react"
-import ReactDOM from "react-dom/client"
-import { BrowserRouter } from "react-router-dom"
-import App from "./App"
-import "./index.css"
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import "./globals.css";
 
-const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement)
-
-root.render(
-	<html>
-		<body>
-		    <React.StrictMode>
-		        <BrowserRouter>
-		            <App />
-		        </BrowserRouter>
-		    </React.StrictMode>
-		</body>
-	</html>
-)
+ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
+);
